@@ -20,7 +20,8 @@ public class ReseauBuilder {
         Neurone[] initLayer = new Neurone[0];
         Neurone[] prevLayer = new Neurone[0];
 
-        for(int n : layersConfig) {
+        for(int k = 0; k < layersConfig.size(); k++) {
+            int n = layersConfig.get(k);
             Neurone[] layer = new Neurone[n];
             for (int i = 0; i < n; i++) {
                 float id =  Float.parseFloat(n+"."+i);
@@ -33,7 +34,7 @@ public class ReseauBuilder {
                 layer[i] = neurone;
             }
             prevLayer = layer;
-            if(n == 0) {
+            if(k == 0) {
                 initLayer = layer;
             }
         }

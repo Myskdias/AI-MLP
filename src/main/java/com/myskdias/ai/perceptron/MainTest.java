@@ -16,25 +16,28 @@ public class MainTest {
     public static void main(String[] args) {
         Reseau r = new ReseauBuilder().addLayer(2).addLayer(2).build();
 
-        TrainingInput t1 = new TrainingInput(new float[] {1f,0f}, new float[] {0f, 1f});
+        TrainingInput t1 = new TrainingInput(new float[] {1f,0f}, new float[] {0.5f, 1f});
         TrainingInput t2 = new TrainingInput(new float[] {1f,1f}, new float[] {1f, 0f});
-        TrainingInput t3 = new TrainingInput(new float[] {0f,1f}, new float[] {0f, 1f});
+        TrainingInput t3 = new TrainingInput(new float[] {0f,1f}, new float[] {0.5f, 1f});
         TrainingInput t4 = new TrainingInput(new float[] {0f,0f}, new float[] {0f, 1f});
 
         TrainingInput[] dataSet = new TrainingInput[] {
                 t1, t2, t3, t4
         };
 
-        for (int i = 0; i < 50; i++) {
+        for (int i = 0; i < 100000; i++) {
             TrainingInput trainingInput = getRandom(dataSet);
             float[] results = r.calc(trainingInput.getValues());
+
             for (int j = 0; j < results.length; j++) {
 
                 for (int k = 0; k < r.getFinalLayer().length; k++) {
                     Neurone n = r.getFinalLayer()[k];
                     for (int l = 0; l < n.getIn().length; l++) {
                         Arete arete = n.getIn()[l];
-                        arete.setW(update(arete.getW(), results[k], trainingInput.getResult(k), 1f, trainingInput.getValue(l)));
+                        float f = update(arete.getW(), results[k], trainingInput.getResult(k), 0.01f, trainingInput.getValue(l));
+                        arete.setW(f);
+                        System.out.println(f);
 
                     }
                 }
@@ -42,6 +45,7 @@ public class MainTest {
             }
         }
         System.out.println("Trained !!");
+        System.out.println(r.getFinalLayer()[0].getIn()[0].getW());
         System.out.println(Arrays.toString(r.calc(t1.getValues())));
 
     }
@@ -51,7 +55,7 @@ public class MainTest {
     }
 
     public static float update(float previous, float result, float expected, float eta, float input) {
-        return previous - eta*(expected - result)*input;
+        return previous + eta*(expected - result)*input;
     }
 
     public static <T> T getRandom(T[] tArray) {

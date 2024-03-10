@@ -4,22 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="77838513-ff5e-4dad-832f-cc73a225adec" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron/Arete.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron/Neurone.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron/Reseau.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron/ReseauBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron/TrainingInput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/test/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/test/Neurone.java" afterDir="false" />
+    <list default="true" id="77838513-ff5e-4dad-832f-cc73a225adec" name="Changes" comment="ezez">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron/test/Ululu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron2/Axone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron2/ErrorFunction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron2/Function.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron2/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron2/Network.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron2/backtracking/ToolBox.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron2/neuron/BasicNeuron.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron2/neuron/BiasNeuron.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron2/neuron/EntryNeuron.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron2/neuron/FinalLayerNeuron.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron2/neuron/Neuron.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron/MainTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron/Neurone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron/Neurone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron/Reseau.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron/Reseau.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron/ReseauBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron/ReseauBuilder.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +34,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -36,9 +42,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2dV043mLB3yhUabpS9hkNOCH006" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -50,20 +56,39 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
+    "Application.MainTest.executor": "Run",
+    "Application.Ululu.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Ululu">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.myskdias.ai.perceptron.Main" />
+      <module name="AI" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.myskdias.ai.perceptron.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MainTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.myskdias.ai.perceptron.MainTest" />
       <module name="AI" />
@@ -77,9 +102,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Ululu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.myskdias.ai.perceptron.test.Ululu" />
+      <module name="AI" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.myskdias.ai.perceptron.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Ululu" />
         <item itemvalue="Application.MainTest" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -91,11 +131,29 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1710077745198</updated>
-      <workItem from="1710077746232" duration="5879000" />
+      <workItem from="1710077746232" duration="6127000" />
+      <workItem from="1710084124279" duration="96000" />
+      <workItem from="1710084225145" duration="3000" />
+      <workItem from="1710084276737" duration="73000" />
+      <workItem from="1710084352482" duration="144000" />
+      <workItem from="1710084500375" duration="16471000" />
     </task>
+    <task id="LOCAL-00001" summary="ezez">
+      <option name="closed" value="true" />
+      <created>1710084011862</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1710084011862</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ezez" />
+    <option name="LAST_COMMIT_MESSAGE" value="ezez" />
   </component>
 </project>

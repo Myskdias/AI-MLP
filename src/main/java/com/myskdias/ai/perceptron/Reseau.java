@@ -13,7 +13,7 @@ public class Reseau {
 
     public float[] calc(float ... values ) {
         if(values.length != initialLayer.length) {
-            System.out.println("Error, not the right number of value");
+            System.out.println("Error, not the right number of value("+values.length+")"+" while IL has "+initialLayer.length+" values");
             return new float[0];
         }
 

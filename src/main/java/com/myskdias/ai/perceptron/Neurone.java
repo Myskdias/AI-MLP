@@ -2,7 +2,7 @@ package com.myskdias.ai.perceptron;
 
 public class Neurone {
 
-    private float bias;
+    private float bias = 0f;
 
     private final float id;
 
@@ -28,7 +28,7 @@ public class Neurone {
         for(Arete a : in) {
             result += a.getValue();
         }
-        return result;
+        return sigmo(result);
     }
 
     public float getValue() {
@@ -50,5 +50,10 @@ public class Neurone {
             }
         }
     }
+
+    public static float sigmo(float u) {
+        return (float) (1 / (1 + Math.exp(-u)));
+    }
+
 
 }
