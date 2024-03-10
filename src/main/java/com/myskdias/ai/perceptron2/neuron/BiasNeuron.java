@@ -1,12 +1,12 @@
 package com.myskdias.ai.perceptron2.neuron;
 
-import com.myskdias.ai.perceptron2.Axone;
+import com.myskdias.ai.perceptron2.Axon;
 
 public class BiasNeuron implements Neuron {
 
-    private Axone[] nextLayer;
+    private Axon[] nextLayer;
 
-    public void setNextLayer(Axone[] layer) {
+    public void setNextLayer(Axon[] layer) {
         this.nextLayer = layer;
     }
 
@@ -36,6 +36,11 @@ public class BiasNeuron implements Neuron {
     @Override
     public double getDeltaIS() {
         return 0;
+    }
+
+    @Override
+    public void addAxon(Axon axon) {
+
     }
 
 }

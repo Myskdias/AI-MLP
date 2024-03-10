@@ -1,5 +1,7 @@
 package com.myskdias.ai.perceptron2.neuron;
 
+import com.myskdias.ai.perceptron2.Axon;
+
 public class EntryNeuron implements Neuron {
 
     private double value = Double.NaN;
@@ -38,5 +40,14 @@ public class EntryNeuron implements Neuron {
     @Override
     public double getDeltaIS() {
         return 0;
+    }
+
+    /**
+     * do nothing because it s useless for an entry neuron to know it s successor
+     * @param axon axon
+     */
+    @Override
+    public void addAxon(Axon axon) {
+
     }
 }

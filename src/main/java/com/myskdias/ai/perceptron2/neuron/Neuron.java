@@ -1,5 +1,7 @@
 package com.myskdias.ai.perceptron2.neuron;
 
+import com.myskdias.ai.perceptron2.Axon;
+
 public interface Neuron {
 
     /**
@@ -23,5 +25,7 @@ public interface Neuron {
     public void train(double eta);
 
     double getDeltaIS();
+
+    public void addAxon(Axon axon);
 
 }

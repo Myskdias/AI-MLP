@@ -2,18 +2,18 @@ package com.myskdias.ai.perceptron2;
 
 import com.myskdias.ai.perceptron2.neuron.Neuron;
 
-public class Axone {
+public class Axon {
 
     private Neuron neuron;
 
     private double weight;
 
-    public Axone(Neuron neuron) {
+    public Axon(Neuron neuron) {
         this.neuron = neuron;
         this.weight = 0.5;
     }
 
-    public Axone(Neuron neuron, double weight) {
+    public Axon(Neuron neuron, double weight) {
         this.neuron = neuron;
         this.weight = weight;
     }

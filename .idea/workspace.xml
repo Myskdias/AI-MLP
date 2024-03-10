@@ -5,26 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="77838513-ff5e-4dad-832f-cc73a225adec" name="Changes" comment="ezez">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron/test/Ululu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron2/Axone.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron2/ErrorFunction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron2/Function.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron2/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron2/Network.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron2/backtracking/ToolBox.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron2/neuron/BasicNeuron.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron2/neuron/BiasNeuron.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron2/neuron/EntryNeuron.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron2/neuron/FinalLayerNeuron.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron2/neuron/Neuron.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron2/NetworkBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron2/functions/ArctanFunction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron2/functions/SigmoFunction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron/MainTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron/Neurone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron/Neurone.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron/Reseau.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron/Reseau.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron/ReseauBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron/ReseauBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron2/Axone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron2/Axon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron2/ErrorFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron2/functions/ErrorFunction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron2/Function.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron2/functions/Function.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron2/Main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron2/Network.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron2/Network.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron2/backtracking/ToolBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron2/backtracking/ToolBox.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron2/neuron/BasicNeuron.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron2/neuron/BasicNeuron.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron2/neuron/BiasNeuron.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron2/neuron/BiasNeuron.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron2/neuron/EntryNeuron.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron2/neuron/EntryNeuron.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron2/neuron/FinalLayerNeuron.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron2/neuron/FinalLayerNeuron.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron2/neuron/Neuron.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron2/neuron/Neuron.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +131,7 @@
       <workItem from="1710084225145" duration="3000" />
       <workItem from="1710084276737" duration="73000" />
       <workItem from="1710084352482" duration="144000" />
-      <workItem from="1710084500375" duration="16471000" />
+      <workItem from="1710084500375" duration="20881000" />
     </task>
     <task id="LOCAL-00001" summary="ezez">
       <option name="closed" value="true" />
@@ -146,7 +141,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710084011862</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="ezez">
+      <option name="closed" value="true" />
+      <created>1710108082582</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1710108082582</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

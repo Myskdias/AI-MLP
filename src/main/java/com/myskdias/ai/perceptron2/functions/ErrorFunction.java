@@ -1,4 +1,5 @@
-package com.myskdias.ai.perceptron2;
+package com.myskdias.ai.perceptron2.functions;
+
 
 public interface ErrorFunction {
 
