@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="77838513-ff5e-4dad-832f-cc73a225adec" name="Changes" comment="Removing the ToolBox.java" />
+    <list default="true" id="77838513-ff5e-4dad-832f-cc73a225adec" name="Changes" comment="Removing the ToolBox.java">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron1/Arete.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron1/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron1/MainTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron1/Neurone.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron1/Reseau.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron1/ReseauBuilder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron1/TrainingInput.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron1/test/Ululu.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,7 +68,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.com.myskdias.ai.perceptron.Main.Main">
+  <component name="RunManager" selected="Application.com.myskdias.ai.perceptron.main.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.myskdias.ai.perceptron1.Main" />
       <module name="AI" />
@@ -98,12 +108,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.myskdias.ai.perceptron.Main.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.myskdias.ai.perceptron.Main.Main" />
+    <configuration name="com.myskdias.ai.perceptron.main.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.myskdias.ai.perceptron.main.Main" />
       <module name="AI" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.myskdias.ai.perceptron.Main.*" />
+          <option name="PATTERN" value="com.myskdias.ai.perceptron.main.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -113,7 +123,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.com.myskdias.ai.perceptron.Main.Main" />
+        <item itemvalue="Application.com.myskdias.ai.perceptron.main.Main" />
         <item itemvalue="Application.Ululu" />
         <item itemvalue="Application.MainTest" />
         <item itemvalue="Application.Main" />
@@ -134,7 +144,7 @@
       <workItem from="1710084276737" duration="73000" />
       <workItem from="1710084352482" duration="144000" />
       <workItem from="1710084500375" duration="26127000" />
-      <workItem from="1710117902155" duration="1157000" />
+      <workItem from="1710117902155" duration="1619000" />
     </task>
     <task id="LOCAL-00001" summary="ezez">
       <option name="closed" value="true" />
@@ -192,7 +202,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710118881433</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Removing the ToolBox.java">
+      <option name="closed" value="true" />
+      <created>1710119093187</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1710119093187</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
