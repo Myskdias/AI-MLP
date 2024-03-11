@@ -6,8 +6,6 @@ import com.myskdias.ai.perceptron.functions.ArctanFunction;
 import com.myskdias.ai.perceptron.functions.ErrorFunction;
 import com.myskdias.ai.perceptron.functions.SigmoFunction;
 import com.myskdias.ai.perceptron.functions.SquareErrorFunction;
-import com.myskdias.ai.perceptron.neuron.BasicNeuron;
-import com.myskdias.ai.perceptron.neuron.Neuron;
 
 import java.util.Arrays;
 import java.util.Random;
