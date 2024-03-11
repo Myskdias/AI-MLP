@@ -1,4 +1,4 @@
-package com.myskdias.ai.perceptron;
+package com.myskdias.ai.perceptron1;
 
 public class Main {
 

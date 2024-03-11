@@ -1,7 +1,7 @@
-package com.myskdias.ai.perceptron2.backtracking;
+package com.myskdias.ai.perceptron.backtracking;
 
-import com.myskdias.ai.perceptron2.functions.ErrorFunction;
-import com.myskdias.ai.perceptron2.functions.Function;
+import com.myskdias.ai.perceptron.functions.ErrorFunction;
+import com.myskdias.ai.perceptron.functions.Function;
 
 public class ToolBox {
 

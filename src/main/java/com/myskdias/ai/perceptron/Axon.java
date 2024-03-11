@@ -1,16 +1,18 @@
-package com.myskdias.ai.perceptron2;
+package com.myskdias.ai.perceptron;
 
-import com.myskdias.ai.perceptron2.neuron.Neuron;
+import com.myskdias.ai.perceptron.neuron.Neuron;
+
+import java.util.Random;
 
 public class Axon {
 
-    private Neuron neuron;
+    private final Neuron neuron;
 
     private double weight;
 
     public Axon(Neuron neuron) {
         this.neuron = neuron;
-        this.weight = 0.5;
+        this.weight = new Random().nextDouble();
     }
 
     public Axon(Neuron neuron, double weight) {
@@ -31,7 +33,14 @@ public class Axon {
     }
 
     public void removeToWeight(double delta) {
+        if(delta != delta) {
+            throw new RuntimeException("oere");
+        }
         weight -= delta;
     }
 
+    @Override
+    public String toString() {
+        return "weight: "+weight;
+    }
 }

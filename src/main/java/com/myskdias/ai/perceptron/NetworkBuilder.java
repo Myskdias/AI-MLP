@@ -1,7 +1,7 @@
-package com.myskdias.ai.perceptron2;
+package com.myskdias.ai.perceptron;
 
-import com.myskdias.ai.perceptron2.functions.Function;
-import com.myskdias.ai.perceptron2.neuron.*;
+import com.myskdias.ai.perceptron.functions.Function;
+import com.myskdias.ai.perceptron.neuron.*;
 
 import java.util.ArrayList;
 
@@ -50,11 +50,15 @@ public class NetworkBuilder {
             Neuron[] hiddenLayer = new Neuron[size+1];
 
             for (int i = 0; i < size; i++) {
-                hiddenLayer[i] = new BasicNeuron(hiddenLayerAF, prevLayer);
+                BasicNeuron bn = new BasicNeuron(hiddenLayerAF, prevLayer);
+                bn.setLayer(s+1);
+                bn.setNumber(i);
+                hiddenLayer[i] = bn;
+
             }
 
             hiddenLayer[size] = new BiasNeuron();
-            network[s] = hiddenLayer;
+            network[s+1] = hiddenLayer;
             prevLayer = hiddenLayer;
 
         }

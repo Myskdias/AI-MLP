@@ -1,9 +1,9 @@
-package com.myskdias.ai.perceptron2;
+package com.myskdias.ai.perceptron;
 
-import com.myskdias.ai.perceptron2.functions.ErrorFunction;
-import com.myskdias.ai.perceptron2.neuron.EntryNeuron;
-import com.myskdias.ai.perceptron2.neuron.FinalLayerNeuron;
-import com.myskdias.ai.perceptron2.neuron.Neuron;
+import com.myskdias.ai.perceptron.functions.ErrorFunction;
+import com.myskdias.ai.perceptron.neuron.EntryNeuron;
+import com.myskdias.ai.perceptron.neuron.FinalLayerNeuron;
+import com.myskdias.ai.perceptron.neuron.Neuron;
 import org.jetbrains.annotations.NotNull;
 
 public class Network {
@@ -31,13 +31,17 @@ public class Network {
         return results;
     }
 
+    public Neuron[][] getNetwork() {
+        return network;
+    }
+
     /**
      *
      * @param values the entry values
      * @return the values computed by the network
      */
     public double[] calc(double[] values) {
-
+        clearValues();
         //we do not look at the last neuron because it is the bias neuron
         for (int i = 0; i < network[0].length - 1; i++) {
 
@@ -58,7 +62,8 @@ public class Network {
                     neuron.train(errorFunction, expected, i, eta);
                 }
             } else {
-                for (int i = 0; i < network[s].length; i++) {
+
+                for (int i = 0; i < network[s].length - 1; i++) {
                     network[s][i].train(eta);
                 }
             }

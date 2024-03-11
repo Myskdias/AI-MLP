@@ -1,4 +1,4 @@
-package com.myskdias.ai.perceptron.test;
+package com.myskdias.ai.perceptron1.test;
 
 import java.util.Random;
 

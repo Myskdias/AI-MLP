@@ -1,13 +1,18 @@
-package com.myskdias.ai.perceptron2.neuron;
+package com.myskdias.ai.perceptron.neuron;
 
-import com.myskdias.ai.perceptron2.Axon;
-import com.myskdias.ai.perceptron2.functions.Function;
-import com.myskdias.ai.perceptron2.backtracking.ToolBox;
+import com.myskdias.ai.perceptron.Axon;
+import com.myskdias.ai.perceptron.functions.Function;
+import com.myskdias.ai.perceptron.backtracking.ToolBox;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class BasicNeuron implements Neuron {
+
+    private int layer;
+
+    private int number;
 
     protected double value = Double.NaN;
 
@@ -27,9 +32,29 @@ public class BasicNeuron implements Neuron {
         for (int i = 0; i < prevLayerNeuron.length; i++) {
             Axon axon = new Axon(prevLayerNeuron[i]);
             prevLayer[i] = axon;
-            prevLayerNeuron[i].addAxon(axon);
+            prevLayerNeuron[i].addAxon(new Axon(this));
         }
 
+    }
+
+    public void setNumber(int number) {
+        this.number = number;
+    }
+
+    public int getNumber() {
+        return number;
+    }
+
+    public void setLayer(int layer) {
+        this.layer = layer;
+    }
+
+    public int getLayer() {
+        return layer;
+    }
+
+    public Axon[] getPrevLayer() {
+        return prevLayer;
     }
 
     @Override
@@ -58,7 +83,12 @@ public class BasicNeuron implements Neuron {
         }
 
         deltaIS = ToolBox.calcDeltaIS(prevDeltaIS, prevOmegaILS, activationFunction, getWeightedSum());
-
+        if(deltaIS != deltaIS) {
+            throw new RuntimeException("deltais"+ Arrays.toString(prevDeltaIS)+" "+
+                    ((BasicNeuron)nextLayer.get(0).getNeuron()).getLayer()
+                    + " "+ ((BasicNeuron)nextLayer.get(0).getNeuron()).getNumber()
+                    +" "+getLayer()+" "+getNumber());
+        }
         for (Axon axon : prevLayer) {
             double delta = ToolBox.delta(deltaIS, axon.getNeuron().getValue(), eta);
             axon.removeToWeight(delta);

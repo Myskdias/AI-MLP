@@ -1,6 +1,6 @@
-package com.myskdias.ai.perceptron2.neuron;
+package com.myskdias.ai.perceptron.neuron;
 
-import com.myskdias.ai.perceptron2.Axon;
+import com.myskdias.ai.perceptron.Axon;
 
 public interface Neuron {
 

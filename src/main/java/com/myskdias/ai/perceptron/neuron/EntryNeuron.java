@@ -1,6 +1,6 @@
-package com.myskdias.ai.perceptron2.neuron;
+package com.myskdias.ai.perceptron.neuron;
 
-import com.myskdias.ai.perceptron2.Axon;
+import com.myskdias.ai.perceptron.Axon;
 
 public class EntryNeuron implements Neuron {
 
@@ -31,7 +31,8 @@ public class EntryNeuron implements Neuron {
      * useless
      */
     @Override
-    public void train(double eta) { }
+    public void train(double eta) {
+    }
 
     /**
      * useless

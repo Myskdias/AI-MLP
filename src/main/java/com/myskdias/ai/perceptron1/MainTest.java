@@ -1,10 +1,4 @@
-package com.myskdias.ai.perceptron;
-
-import com.myskdias.ai.perceptron.Arete;
-import com.myskdias.ai.perceptron.Neurone;
-import com.myskdias.ai.perceptron.Reseau;
-import com.myskdias.ai.perceptron.ReseauBuilder;
-import com.myskdias.ai.perceptron.TrainingInput;
+package com.myskdias.ai.perceptron1;
 
 import java.util.Arrays;
 import java.util.Random;

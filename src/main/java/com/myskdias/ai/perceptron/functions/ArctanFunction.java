@@ -1,4 +1,4 @@
-package com.myskdias.ai.perceptron2.functions;
+package com.myskdias.ai.perceptron.functions;
 
 public class ArctanFunction implements Function {
     @Override
