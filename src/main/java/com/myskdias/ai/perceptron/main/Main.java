@@ -1,4 +1,4 @@
-package com.myskdias.ai.perceptron.Main;
+package com.myskdias.ai.perceptron.main;
 
 import com.myskdias.ai.perceptron.Network;
 import com.myskdias.ai.perceptron.NetworkBuilder;
