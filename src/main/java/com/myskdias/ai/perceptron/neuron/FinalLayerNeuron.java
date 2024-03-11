@@ -3,7 +3,6 @@ package com.myskdias.ai.perceptron.neuron;
 import com.myskdias.ai.perceptron.Axon;
 import com.myskdias.ai.perceptron.functions.ErrorFunction;
 import com.myskdias.ai.perceptron.functions.Function;
-import com.myskdias.ai.perceptron.backtracking.ToolBox;
 
 public class FinalLayerNeuron extends BasicNeuron {
 
@@ -13,9 +12,12 @@ public class FinalLayerNeuron extends BasicNeuron {
     }
 
     public void train(ErrorFunction ef, double[] expected, int i, double eta) {
-        deltaIS = ToolBox.calcDeltaISMax(ef,expected, i, activationFunction, getWeightedSum());
+        double sum = getWeightedSum();
+        //cal deltaIS
+        deltaIS = ef.getPartialDerivative(expected, i).f(activationFunction.f(sum))
+                * activationFunction.fp(sum);
         for (Axon axon : prevLayer) {
-            double delta = ToolBox.delta(deltaIS, axon.getNeuron().getValue(), eta);
+            double delta = deltaIS * axon.getNeuron().getValue()*eta;
             axon.removeToWeight(delta);
         }
     }

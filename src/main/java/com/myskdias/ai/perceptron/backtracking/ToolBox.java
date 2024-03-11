@@ -17,7 +17,7 @@ public class ToolBox {
 
         int N = prevDeltaLs.length;
         if(N != prevOmegaILs.length) {
-            System.err.println("Wrong size !!!!!!!!");
+            System.err.println("Wrong size !");
             return Double.NaN;
         }
         double sum = 0;
@@ -38,9 +38,6 @@ public class ToolBox {
         return deltaIS*xj*eta;
     }
 
-    public static double newOmega(double prevOmega, double delta) {
-        return prevOmega - delta;
-    }
 
     /**
      *

@@ -73,26 +73,41 @@ public class BasicNeuron implements Neuron {
     @Override
     public void train(double eta) {
 
-        double[] prevDeltaIS = new double[nextLayer.size()];
-        double[] prevOmegaILS = new double[nextLayer.size()];
+        double[] prevDeltaIs = new double[nextLayer.size()];
+        double[] prevOmegaILs = new double[nextLayer.size()];
 
         for (int l = 0; l < nextLayer.size(); l++) {
             Axon axon = nextLayer.get(l);
-            prevDeltaIS[l] = axon.getNeuron().getDeltaIS();
-            prevOmegaILS[l] = axon.getWeight();
+            prevDeltaIs[l] = axon.getNeuron().getDeltaIS();
+            prevOmegaILs[l] = axon.getWeight();
         }
 
-        deltaIS = ToolBox.calcDeltaIS(prevDeltaIS, prevOmegaILS, activationFunction, getWeightedSum());
+        //Calculating delta_i^s
+        double zis = getWeightedSum();
+
+        //deltaIS = ToolBox.calcDeltaIS(prevDeltaIS, prevOmegaILS, activationFunction, getWeightedSum());
+        int N = prevDeltaIs.length;
+
+        double sum = 0;
+        for (int l = 0; l < N; l++) {
+            sum += prevDeltaIs[l] * prevOmegaILs[l];
+        }
+
+        deltaIS =  sum * activationFunction.fp(zis);
+
+
         if(deltaIS != deltaIS) {
-            throw new RuntimeException("deltais"+ Arrays.toString(prevDeltaIS)+" "+
+            throw new RuntimeException("deltais"+ Arrays.toString(prevDeltaIs)+" "+
                     ((BasicNeuron)nextLayer.get(0).getNeuron()).getLayer()
                     + " "+ ((BasicNeuron)nextLayer.get(0).getNeuron()).getNumber()
                     +" "+getLayer()+" "+getNumber());
         }
+
         for (Axon axon : prevLayer) {
-            double delta = ToolBox.delta(deltaIS, axon.getNeuron().getValue(), eta);
+            double delta = deltaIS*axon.getNeuron().getValue()*eta;
             axon.removeToWeight(delta);
         }
+
     }
 
     /**
