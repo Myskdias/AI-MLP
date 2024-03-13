@@ -4,14 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="77838513-ff5e-4dad-832f-cc73a225adec" name="Changes" comment="Update">
-      <change afterPath="$PROJECT_DIR$/src/test/java/test/BuilderTest.java" afterDir="false" />
+    <list default="true" id="77838513-ff5e-4dad-832f-cc73a225adec" name="Changes" comment="Add the function serialize to the Network.java">
+      <changelist_data name="Myskdias" email="daessos1@gmail.com" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron/serialization/Unit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron/serialization/Unserializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron/Network.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron/Network.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron/neuron/BasicNeuron.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron/neuron/BasicNeuron.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron/neuron/BiasNeuron.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron/neuron/BiasNeuron.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron/neuron/EntryNeuron.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron/neuron/EntryNeuron.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron/neuron/Neuron.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron/neuron/Neuron.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron/main/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +26,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Myskdias &lt;daessos1@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -83,7 +87,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.BuilderTest">
+  <component name="RunManager" selected="Application.com.myskdias.ai.perceptron.main.Main">
     <configuration name="BuilderTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="test.BuilderTest" />
       <module name="AI" />
@@ -151,8 +155,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.BuilderTest" />
         <item itemvalue="Application.com.myskdias.ai.perceptron.main.Main" />
+        <item itemvalue="Application.BuilderTest" />
         <item itemvalue="Application.Ululu" />
         <item itemvalue="Application.MainTest" />
         <item itemvalue="Application.Main" />
@@ -176,7 +180,7 @@
       <workItem from="1710117902155" duration="1984000" />
       <workItem from="1710179153556" duration="771000" />
       <workItem from="1710191114632" duration="1609000" />
-      <workItem from="1710364822852" duration="3459000" />
+      <workItem from="1710364822852" duration="4895000" />
     </task>
     <task id="LOCAL-00001" summary="ezez">
       <option name="closed" value="true" />
@@ -266,7 +270,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710367148766</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Add the function serialize to the Network.java">
+      <option name="closed" value="true" />
+      <created>1710369714188</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1710369714188</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -299,6 +311,7 @@
     <MESSAGE value="ezez" />
     <MESSAGE value="Removing the ToolBox.java" />
     <MESSAGE value="Update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update" />
+    <MESSAGE value="Add the function serialize to the Network.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add the function serialize to the Network.java" />
   </component>
 </project>

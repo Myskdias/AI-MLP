@@ -7,6 +7,7 @@ import com.myskdias.ai.perceptron.functions.ErrorFunction;
 import com.myskdias.ai.perceptron.functions.SigmoFunction;
 import com.myskdias.ai.perceptron.functions.SquareErrorFunction;
 
+import java.io.File;
 import java.util.Arrays;
 import java.util.Random;
 
@@ -50,6 +51,9 @@ public class Main {
         System.out.println(Arrays.toString(network.calc(features[1])));
         System.out.println(Arrays.toString(network.calc(features[2])));
         System.out.println(Arrays.toString(network.calc(features[3])));
+
+        network.save(new File("C:\\Users\\mathi\\Desktop\\dev\\perceptron\\perceptron.af"));
+
     }
 
 }

@@ -5,6 +5,8 @@ import com.myskdias.ai.perceptron.neuron.BasicNeuron;
 import com.myskdias.ai.perceptron.neuron.EntryNeuron;
 import com.myskdias.ai.perceptron.neuron.FinalLayerNeuron;
 import com.myskdias.ai.perceptron.neuron.Neuron;
+import com.myskdias.ai.perceptron.parsing.Unit;
+import com.myskdias.ai.perceptron.parsing.Parser;
 import org.jetbrains.annotations.NotNull;
 
 import java.io.File;
@@ -77,7 +79,7 @@ public class Network {
 
     }
 
-    public void serialize(@NotNull File file) {
+    public void save(@NotNull File file) {
         if(!file.exists()) {
             try {
                 file.createNewFile();
@@ -130,10 +132,19 @@ public class Network {
 
     }
 
-    public void load(File file) {
+    /**
+     *
+     * @param file a file that end with .af
+     * @return the network serialized in this file
+     */
+    public static Network load(@NotNull File file) throws FileNotFoundException {
+        if(!file.exists()) {
+            throw new FileNotFoundException();
+        }
 
-
-
+        Parser parser = new Parser(file);
+        Unit unit = parser.nextUnit();
+        return null;
     }
 
 
