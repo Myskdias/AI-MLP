@@ -2,13 +2,12 @@ package com.myskdias.ai.perceptron.neuron;
 
 import com.myskdias.ai.perceptron.Axon;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class BiasNeuron implements Neuron {
 
-    private Axon[] nextLayer;
-
-    public void setNextLayer(Axon[] layer) {
-        this.nextLayer = layer;
-    }
+    private final List<Axon> nextLayer = new ArrayList<>();
 
     @Override
     public double getValue() {
@@ -38,9 +37,21 @@ public class BiasNeuron implements Neuron {
         return 0;
     }
 
+    /**
+     * do nothing because it s useless for an entry neuron to know it s successor
+     * @param axon axon
+     */
     @Override
     public void addAxon(Axon axon) {
+        nextLayer.add(axon);
+    }
 
+    /**
+     * @return the axons linking to the next layer
+     */
+    @Override
+    public List<Axon> getAxons() {
+        return nextLayer;
     }
 
 }

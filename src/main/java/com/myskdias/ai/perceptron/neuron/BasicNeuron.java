@@ -2,7 +2,6 @@ package com.myskdias.ai.perceptron.neuron;
 
 import com.myskdias.ai.perceptron.Axon;
 import com.myskdias.ai.perceptron.functions.Function;
-import com.myskdias.ai.perceptron.backtracking.ToolBox;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -60,6 +59,14 @@ public class BasicNeuron implements Neuron {
     @Override
     public void addAxon(Axon axon) {
         this.nextLayer.add(axon);
+    }
+
+    /**
+     * @return the axons linking to the next layer
+     */
+    @Override
+    public List<Axon> getAxons() {
+        return nextLayer;
     }
 
     public double getDeltaIS() {
@@ -144,4 +151,7 @@ public class BasicNeuron implements Neuron {
          }
     }
 
+    public Function getActivationFunction() {
+        return activationFunction;
+    }
 }

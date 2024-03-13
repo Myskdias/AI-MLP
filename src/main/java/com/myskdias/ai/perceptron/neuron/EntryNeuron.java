@@ -2,9 +2,14 @@ package com.myskdias.ai.perceptron.neuron;
 
 import com.myskdias.ai.perceptron.Axon;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class EntryNeuron implements Neuron {
 
     private double value = Double.NaN;
+
+    protected List<Axon> nextLayer = new ArrayList<>();
 
     public EntryNeuron() {}
 
@@ -49,6 +54,14 @@ public class EntryNeuron implements Neuron {
      */
     @Override
     public void addAxon(Axon axon) {
+        nextLayer.add(axon);
+    }
 
+    /**
+     * @return the axons linking to the next layer
+     */
+    @Override
+    public List<Axon> getAxons() {
+        return nextLayer;
     }
 }

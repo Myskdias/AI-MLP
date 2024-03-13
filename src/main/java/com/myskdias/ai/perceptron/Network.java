@@ -1,10 +1,16 @@
 package com.myskdias.ai.perceptron;
 
 import com.myskdias.ai.perceptron.functions.ErrorFunction;
+import com.myskdias.ai.perceptron.neuron.BasicNeuron;
 import com.myskdias.ai.perceptron.neuron.EntryNeuron;
 import com.myskdias.ai.perceptron.neuron.FinalLayerNeuron;
 import com.myskdias.ai.perceptron.neuron.Neuron;
 import org.jetbrains.annotations.NotNull;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.PrintWriter;
 
 public class Network {
 
@@ -68,6 +74,64 @@ public class Network {
                 }
             }
         }
+
+    }
+
+    public void serialize(@NotNull File file) {
+        if(!file.exists()) {
+            try {
+                file.createNewFile();
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        }
+
+        try {
+            PrintWriter writer = new PrintWriter(file);
+            StringBuilder builder = new StringBuilder();
+            builder.append("[{");
+            for(Neuron[] neurons : network) {
+                builder.append(neurons.length).append(", ");
+            }
+            builder.delete(builder.length()-2, builder.length());
+            builder.append("}, ");
+
+            builder.append("{");
+            for (int i = 0; i < network.length - 1; i++) {
+                Neuron[] neurons = network[i];
+                builder.append("{");
+                for(Neuron n : neurons) {
+                    builder.append("{");
+                    for(Axon axon : n.getAxons()) {
+                        builder.append(axon.getWeight()).append(", ");
+                    }
+                    builder.delete(builder.length()-2, builder.length());
+                    builder.append("}, ");
+                }
+                builder.delete(builder.length()-2, builder.length());
+                builder.append("}, ");
+            }
+            builder.delete(builder.length()-2, builder.length());
+            builder.append("}, ");
+            builder.append("{");
+            builder.append(((FinalLayerNeuron)network[network.length-1][0]).getActivationFunction().getClass().getCanonicalName());
+            builder.append("}, ");
+            builder.append("{");
+            if(network.length > 2) {
+                builder.append(((BasicNeuron)network[network.length-2][0]).getActivationFunction().getClass().getCanonicalName());
+            }
+            builder.append("}]");
+            writer.print(builder.toString());
+            writer.flush();
+            writer.close();
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        }
+
+    }
+
+    public void load(File file) {
+
 
 
     }
