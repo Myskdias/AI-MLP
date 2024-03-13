@@ -37,10 +37,6 @@ public class BiasNeuron implements Neuron {
         return 0;
     }
 
-    /**
-     * do nothing because it s useless for an entry neuron to know it s successor
-     * @param axon axon
-     */
     @Override
     public void addAxon(Axon axon) {
         nextLayer.add(axon);

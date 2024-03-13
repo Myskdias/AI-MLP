@@ -18,16 +18,28 @@ public class Network {
 
     private final Neuron[][] network;
 
+    /**
+     * Don't use this constructor. You should rather use the {@link NetworkBuilder} class.
+     * @param network a network represented by a 2D-Array
+     */
     public Network(@NotNull Neuron[] @NotNull [] network) {
         this.network = network;
     }
 
+    /**
+     * clear value of each neuron., i.e. the extent to which they were activated with previous entry.
+     * </br> you don't need to call this method before the {@link #calc(double[] values)} method.
+     */
     public void clearValues() {
         for(Neuron n : network[network.length-1]) {
             n.clearValue();
         }
     }
 
+    /**
+     *
+     * @return the value of each neuron of the last layer of the network
+     */
     public double[] getResults() {
         double[] results = new double[network[network.length - 1].length];
 
@@ -39,6 +51,11 @@ public class Network {
         return results;
     }
 
+    /**
+     * Note that the bias neuron is always located on the last spot of each row
+     * @return the neurons composing the network. Each row represents a layer of the network.
+     *
+     */
     public Neuron[][] getNetwork() {
         return network;
     }
@@ -60,6 +77,17 @@ public class Network {
         return getResults();
     }
 
+    /**
+     *
+     * Apply one iteration of the train algorithm with the given data. </br>
+     * In the future, I plan to create a method that takes data, a number of epoch and an eta as input which will call
+     * this method several time.
+     *
+     * @param values input values
+     * @param expected expected output values
+     * @param eta learning rate
+     * @param errorFunction self-explanatory
+     */
     public void train(double[] values, double[] expected, double eta, ErrorFunction errorFunction) {
         calc(values);
 

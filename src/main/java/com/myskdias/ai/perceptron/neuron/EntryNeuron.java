@@ -49,7 +49,6 @@ public class EntryNeuron implements Neuron {
     }
 
     /**
-     * do nothing because it s useless for an entry neuron to know it s successor
      * @param axon axon
      */
     @Override

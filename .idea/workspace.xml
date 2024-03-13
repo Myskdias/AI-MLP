@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="77838513-ff5e-4dad-832f-cc73a225adec" name="Changes" comment="Add the function serialize to the Network.java">
-      <changelist_data name="Myskdias" email="daessos1@gmail.com" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron/serialization/Unit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron/serialization/Unserializer.java" afterDir="false" />
+    <list default="true" id="77838513-ff5e-4dad-832f-cc73a225adec" name="Changes" comment="Beginning to work on the save/load system.&#10;Creating a new package parsing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron/Network.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron/Network.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron/neuron/BiasNeuron.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron/neuron/BiasNeuron.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron/neuron/EntryNeuron.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron/neuron/EntryNeuron.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +47,7 @@
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="ProjectErrors" />
+    <option name="showPreview" value="true" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
@@ -84,6 +83,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "editor.preferences.folding",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -180,7 +180,7 @@
       <workItem from="1710117902155" duration="1984000" />
       <workItem from="1710179153556" duration="771000" />
       <workItem from="1710191114632" duration="1609000" />
-      <workItem from="1710364822852" duration="4895000" />
+      <workItem from="1710364822852" duration="6857000" />
     </task>
     <task id="LOCAL-00001" summary="ezez">
       <option name="closed" value="true" />
@@ -278,7 +278,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710369714188</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Beginning to work on the save/load system.&#10;Creating a new package parsing">
+      <option name="closed" value="true" />
+      <created>1710371384898</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1710371384898</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -308,10 +316,12 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="ezez" />
     <MESSAGE value="Removing the ToolBox.java" />
     <MESSAGE value="Update" />
     <MESSAGE value="Add the function serialize to the Network.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add the function serialize to the Network.java" />
+    <MESSAGE value="Beginning to work on the save/load system.&#10;Creating a new package parsing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Beginning to work on the save/load system.&#10;Creating a new package parsing" />
   </component>
 </project>
