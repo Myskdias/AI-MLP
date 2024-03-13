@@ -3,6 +3,7 @@ package com.myskdias.ai.perceptron.backtracking;
 import com.myskdias.ai.perceptron.functions.ErrorFunction;
 import com.myskdias.ai.perceptron.functions.Function;
 
+@Deprecated
 public class ToolBox {
 
     /**

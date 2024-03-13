@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="77838513-ff5e-4dad-832f-cc73a225adec" name="Changes" comment="Removing the ToolBox.java">
+    <list default="true" id="77838513-ff5e-4dad-832f-cc73a225adec" name="Changes" comment="Update">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron/functions/ReluFunction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron/backtracking/ToolBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron/backtracking/ToolBox.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,12 +25,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Myskdias"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Myskdias&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -57,6 +59,7 @@
     &quot;Application.MainTest.executor&quot;: &quot;Run&quot;,
     &quot;Application.Ululu.executor&quot;: &quot;Run&quot;,
     &quot;Application.com.myskdias.ai.perceptron.Main.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.com.myskdias.ai.perceptron.main.Main.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
@@ -151,6 +154,9 @@
       <workItem from="1710084352482" duration="144000" />
       <workItem from="1710084500375" duration="26127000" />
       <workItem from="1710117902155" duration="1984000" />
+      <workItem from="1710179153556" duration="771000" />
+      <workItem from="1710191114632" duration="1609000" />
+      <workItem from="1710364822852" duration="945000" />
     </task>
     <task id="LOCAL-00001" summary="ezez">
       <option name="closed" value="true" />
@@ -224,7 +230,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710119575848</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Update">
+      <option name="closed" value="true" />
+      <created>1710179314991</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1710179314991</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -256,6 +270,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ezez" />
     <MESSAGE value="Removing the ToolBox.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removing the ToolBox.java" />
+    <MESSAGE value="Update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update" />
   </component>
 </project>
