@@ -119,7 +119,7 @@ public class Network {
         try {
             PrintWriter writer = new PrintWriter(file);
             StringBuilder builder = new StringBuilder();
-            builder.append("[{");
+            builder.append("{{");
             for(Neuron[] neurons : network) {
                 builder.append(neurons.length).append(", ");
             }
@@ -150,7 +150,7 @@ public class Network {
             if(network.length > 2) {
                 builder.append(((BasicNeuron)network[network.length-2][0]).getActivationFunction().getClass().getCanonicalName());
             }
-            builder.append("}]");
+            builder.append("}}");
             writer.print(builder.toString());
             writer.flush();
             writer.close();

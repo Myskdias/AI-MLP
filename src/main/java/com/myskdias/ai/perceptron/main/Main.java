@@ -54,6 +54,7 @@ public class Main {
 
         network.save(new File("C:\\Users\\mathi\\Desktop\\dev\\perceptron\\perceptron.af"));
 
+
     }
 
 }

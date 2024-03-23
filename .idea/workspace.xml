@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="77838513-ff5e-4dad-832f-cc73a225adec" name="Changes" comment="Beginning to work on the save/load system.&#10;Creating a new package parsing">
+    <list default="true" id="77838513-ff5e-4dad-832f-cc73a225adec" name="Changes" comment="add javadoc">
+      <change afterPath="$PROJECT_DIR$/src/test/java/test/Foo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron/Network.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron/Network.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron/neuron/BiasNeuron.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron/neuron/BiasNeuron.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron/neuron/EntryNeuron.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron/neuron/EntryNeuron.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron/parsing/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron/parsing/Parser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron/parsing/Unit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/myskdias/ai/perceptron/parsing/Unit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/BuilderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/BuilderTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,33 +63,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.BuilderTest.executor": "Run",
-    "Application.Main.executor": "Run",
-    "Application.MainTest.executor": "Run",
-    "Application.Ululu.executor": "Run",
-    "Application.com.myskdias.ai.perceptron.Main.Main.executor": "Run",
-    "Application.com.myskdias.ai.perceptron.main.Main.executor": "Run",
-    "OverrideImplement.generate.javadoc": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "editor.preferences.folding",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.BuilderTest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MainTest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ululu.executor&quot;: &quot;Run&quot;,
+    &quot;Application.com.myskdias.ai.perceptron.Main.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.com.myskdias.ai.perceptron.main.Main.executor&quot;: &quot;Run&quot;,
+    &quot;OverrideImplement.generate.javadoc&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.folding&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.com.myskdias.ai.perceptron.main.Main">
     <configuration name="BuilderTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="test.BuilderTest" />
@@ -180,7 +183,10 @@
       <workItem from="1710117902155" duration="1984000" />
       <workItem from="1710179153556" duration="771000" />
       <workItem from="1710191114632" duration="1609000" />
-      <workItem from="1710364822852" duration="6857000" />
+      <workItem from="1710364822852" duration="7344000" />
+      <workItem from="1710687604487" duration="101000" />
+      <workItem from="1710782351088" duration="607000" />
+      <workItem from="1711130491351" duration="4018000" />
     </task>
     <task id="LOCAL-00001" summary="ezez">
       <option name="closed" value="true" />
@@ -286,7 +292,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710371384898</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="add javadoc">
+      <option name="closed" value="true" />
+      <created>1710373461507</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1710373461507</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -322,6 +336,7 @@
     <MESSAGE value="Update" />
     <MESSAGE value="Add the function serialize to the Network.java" />
     <MESSAGE value="Beginning to work on the save/load system.&#10;Creating a new package parsing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Beginning to work on the save/load system.&#10;Creating a new package parsing" />
+    <MESSAGE value="add javadoc" />
+    <option name="LAST_COMMIT_MESSAGE" value="add javadoc" />
   </component>
 </project>

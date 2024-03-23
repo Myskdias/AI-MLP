@@ -6,6 +6,7 @@ public class BuilderTest {
         builder.append("gdegedge");
         builder.delete(builder.length()-2, builder.length());
         System.out.println(builder.toString());
+        Foo f = new Foo("rere");
     }
 
 }
