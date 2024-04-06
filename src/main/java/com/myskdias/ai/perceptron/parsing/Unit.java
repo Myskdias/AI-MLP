@@ -21,13 +21,14 @@ public class Unit implements Iterable<Unit> {
         this.value = value;
     }
 
+    /**
+     *
+     * @param s the whole sequence
+     * @param beginning the beginning index of this sequence
+     * @return the end index + 1 of this unit
+     */
     public int process(char[] s, int beginning) {
-//        if(s[beginning] == '{') {
-//            //diving into another sub-unit
-//            Unit sub = new Unit();
-//            int next = sub.process(s, beginning+1);
-//            subUnit.add(sub);
-//        }
+
         int i = beginning;
         while(i < s.length && s[i] != '}') {
             if(s[i] == '{') {
@@ -76,6 +77,14 @@ public class Unit implements Iterable<Unit> {
     @Override
     public Iterator<Unit> iterator() {
         return subUnit.iterator();
+    }
+
+    /**
+     *
+     * @return the number of subunit
+     */
+    public int getSize() {
+        return subUnit.size();
     }
 
 }

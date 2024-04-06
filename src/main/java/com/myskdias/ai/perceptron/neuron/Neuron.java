@@ -44,4 +44,6 @@ public interface Neuron {
      */
     public List<Axon> getAxons();
 
+    public List<Axon> getNextLayer();
+
 }

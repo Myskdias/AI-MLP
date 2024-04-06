@@ -1,18 +1,22 @@
 package com.myskdias.ai.perceptron;
 
 import com.myskdias.ai.perceptron.functions.ErrorFunction;
+import com.myskdias.ai.perceptron.functions.Function;
 import com.myskdias.ai.perceptron.neuron.BasicNeuron;
 import com.myskdias.ai.perceptron.neuron.EntryNeuron;
 import com.myskdias.ai.perceptron.neuron.FinalLayerNeuron;
 import com.myskdias.ai.perceptron.neuron.Neuron;
-import com.myskdias.ai.perceptron.parsing.Unit;
 import com.myskdias.ai.perceptron.parsing.Parser;
+import com.myskdias.ai.perceptron.parsing.Unit;
 import org.jetbrains.annotations.NotNull;
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.lang.reflect.InvocationTargetException;
+import java.util.ArrayList;
+import java.util.Iterator;
 
 public class Network {
 
@@ -165,14 +169,45 @@ public class Network {
      * @param file a file that end with .af
      * @return the network serialized in this file
      */
-    public static Network load(@NotNull File file) throws FileNotFoundException {
+    public static Network load(@NotNull File file) throws FileNotFoundException, ClassNotFoundException, NoSuchMethodException, InvocationTargetException, InstantiationException, IllegalAccessException {
         if(!file.exists()) {
             throw new FileNotFoundException();
         }
 
         Parser parser = new Parser(file);
-        Unit unit = parser.nextUnit();
-        return null;
+        Iterator<Unit> iterator = parser.getUnitIterator();
+        Unit sizesUnit = iterator.next();
+
+        ArrayList<Integer> sizes = new ArrayList<>();
+        for(Unit u : sizesUnit) {
+            sizes.add(Integer.valueOf(u.getSize()));
+        }
+
+
+
+
+        Unit weightsUnit = iterator.next();
+        Unit firstAF = iterator.next();
+        Class<?> c1 = Class.forName(firstAF.getValue());
+        Function hlaf =  (Function) c1.getConstructor().newInstance();
+
+        Function flaf = hlaf;
+        if(iterator.hasNext()) {
+            Unit secondAF = iterator.next();
+            Class<?> c2 = Class.forName(secondAF.getValue());
+            flaf =  (Function) c2.getConstructor().newInstance();
+        }
+
+        Network network = new NetworkBuilder(sizes, hlaf, flaf).build();
+        Neuron[][] neurons = network.getNetwork();
+
+        for(int i = 0; i < sizes.size(); i++) {
+            for(int j = 0; j < sizes.get(i); j++) {
+                Neuron neuron = neurons[i][j];
+
+            }
+        }
+        return network;
     }
 
 

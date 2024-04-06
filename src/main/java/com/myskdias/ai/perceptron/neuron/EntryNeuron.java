@@ -63,4 +63,9 @@ public class EntryNeuron implements Neuron {
     public List<Axon> getAxons() {
         return nextLayer;
     }
+
+    @Override
+    public List<Axon> getNextLayer() {
+        return nextLayer;
+    }
 }

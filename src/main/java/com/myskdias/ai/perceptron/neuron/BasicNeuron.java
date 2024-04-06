@@ -36,6 +36,10 @@ public class BasicNeuron implements Neuron {
 
     }
 
+    public List<Axon> getNextLayer() {
+        return nextLayer;
+    }
+
     public void setNumber(int number) {
         this.number = number;
     }

@@ -23,6 +23,17 @@ public class NetworkBuilder {
         this.finalLayerAF = finalLayerAF;
     }
 
+    public NetworkBuilder(ArrayList<Integer> configuration, Function hiddenLayerAF, Function finalLayerAF) {
+        this.firstLayerSize = configuration.get(0);
+        this.lastLayerSize = configuration.get(configuration.size() - 1);
+        this.hiddenLayerAF = hiddenLayerAF;
+        this.finalLayerAF = finalLayerAF;
+
+        for(int i = 1; i < configuration.size() - 1; i++) {
+            layerConfig.add(configuration.get(i));
+        }
+    }
+
     public NetworkBuilder addLayer(int numberOfNeuron) {
         layerConfig.add(numberOfNeuron);
         return this;
